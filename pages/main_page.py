@@ -1,3 +1,4 @@
+
 from playwright.sync_api import Page
 from constants import BASE_URL
 
@@ -7,6 +8,7 @@ class MainPage():
     PASSWORD = "123456789"
     INVALID_MAIL = 'example@@mail.ru'
 
+    # Разделы каталога и их названия после открытия
     catalog_dict = {'Электроника': 'Электроника', 'Бытовая техника': 'Бытовая техника',
                     'Строительство и ремонт': 'Товары для строительства и ремонта',
                     'Дача, сад и огород': 'Товары для дачи и сада',
@@ -34,6 +36,14 @@ class MainPage():
         # Нажимаем кнопку Войти
         self.login_button.click()
 
+    def catalog_button(self):
+        # Открыть каталог
+        self.page.locator("[data-test-id=\"button__catalog\"]").click()
+
+    def catalog_section(self, section):
+        # Перейти на страницу каталога
+        self.page.locator("[data-test-id=\"modal__catalog\"]").get_by_role("link", name=section).click()
+
     def switch_to_password_login(self):
         # Переключаем на форму ввода логина и пароля
         self.switch_to_password_login_button.click()
@@ -56,6 +66,7 @@ class MainPage():
         self.page.goto(url, wait_until="domcontentloaded")
 
     def open_login(self):
+        # Открыть поп-ап авторизации
         self.page.locator("[data-test-id=\"button__auth\"]").get_by_text("Войти").click()
 
     def search(self, query: str):
@@ -65,11 +76,11 @@ class MainPage():
         self.page.locator('[data-test-id="input__search"]').press("Enter")
 
     def get_first_product_name(self) -> str:
-        #Метод для получения текста первого продукта на странице."""
+        #Метод для получения текста первого продукта на странице.
         return self.page.locator('[data-test-id="text__product-name"]').first.inner_text()
 
     def add_name_for_the_favorites_click(self,name) -> str:
-        #Метод для формирования текста 'Добавить {имя продукта} в избранное'
+        # Метод для формирования текста 'Добавить {имя продукта} в избранное'
         return f"Добавить {name} в избранное"
 
     def delet_name_for_the_favorites_click(self,name):
@@ -78,6 +89,7 @@ class MainPage():
 
     def get_product_names(self):
         #Получение текста названия продукции на главной странице
+
         #Ожидание появления хотя бы одного элемента с указанным локатором
         self.page.wait_for_selector('//*[@class="subtitle-item"][@data-test-id="text__product-name"]')
 
@@ -88,3 +100,6 @@ class MainPage():
         product_names = product_locator.evaluate_all("(elements) => elements.map(el => el.textContent.trim())")
         return product_names
 
+    def title_text(self):
+        # Получаем название отображаемого раздела  каталога
+        return self.page.locator("[data-test-id=\"text__title\"]").inner_text().rstrip()
