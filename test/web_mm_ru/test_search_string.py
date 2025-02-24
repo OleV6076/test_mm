@@ -1,5 +1,5 @@
 from playwright.sync_api import expect
-from pages.main_page import MainPage
+from pages.mm_ru.main_page import MainPage
 
 
 def test_search_string(page):

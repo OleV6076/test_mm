@@ -1,7 +1,7 @@
 import random
-from pages.main_page import MainPage
-from playwright.sync_api import Page, expect
-from constants import  FAVORITES_URL
+from pages.mm_ru.main_page import MainPage
+from playwright.sync_api import expect
+
 
 def test_add_to_favorite(page):
 

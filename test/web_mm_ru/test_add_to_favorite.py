@@ -1,5 +1,5 @@
 import random
-from pages.main_page import MainPage
+from pages.mm_ru.main_page import MainPage
 from playwright.sync_api import  expect
 from constants import  FAVORITES_URL
 
