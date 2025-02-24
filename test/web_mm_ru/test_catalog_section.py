@@ -17,7 +17,7 @@ def test_catalog_section(page):
     # Нажать кнопку каталога
     main_page.catalog_button()
 
-    # Проверяем что католог отобразился
+    # Проверяем что разделы каталога отобразились
     expect(page.locator("[data-test-id=\"modal__catalog\"]").get_by_text(
         "Покупки для юрлиц Электроника Бытовая техника Строительство и ремонт Дача, сад и")).to_be_visible()
 
