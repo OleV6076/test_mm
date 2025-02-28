@@ -6,3 +6,4 @@
 <img src="design/icons/python-original.svg" width="50"><img src="design/icons/pysharm.png" width="50"><img src="design/icons/pytest.png" width="50"> <img src="design/icons/intellij_pycharm.png"> <img src="design/icons/allure_report.png" width="50">  <img src="design/icons/tg.png" width="50"> <img src="design/icons/Github.png" width="50"><img src="design/icons/request.png" width="50">
 
 ----
+![python-original](https://github.com/user-attachments/assets/7d52df21-6a35-433f-adea-60e6ad6f69d9)
