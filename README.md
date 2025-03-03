@@ -69,6 +69,12 @@ docker build -t playwright-tests .
 
 ----
 
+#### Видео прохождения теста
+
+[615e7d4f8ec1caafcc754ed8c3f6a440.webm](https://github.com/user-attachments/assets/a8dfbea1-7dfd-491e-9cea-64ce3c046b57)
+
+
+
 
 
 
