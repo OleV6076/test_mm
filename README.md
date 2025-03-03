@@ -59,3 +59,14 @@ docker build -t playwright-tests .
 ```
 ![Запуск](https://github.com/user-attachments/assets/dfbc00b1-4232-4f21-a93f-5cabec764b4d)
 
+### Allure отчет
+
+#### Общие результаты
+![Allure общий](https://github.com/user-attachments/assets/e7aeacd8-696a-423e-8411-b1df8f8ab51c)
+
+#### Список тест кейсов в Allure 
+![Allure кейсыpng](https://github.com/user-attachments/assets/30fa5693-4206-42e3-9e9d-4510fc5a5e0b)
+
+
+
+
