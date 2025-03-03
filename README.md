@@ -32,13 +32,13 @@
  
 ### Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
-> mkdir my_project
-> cd my_project
-> python -m venv .venv
-> source .venv/bin/activate  # На Windows: .venv\Scripts\activate
-> pip install poetry
-> poetry init  # Создаст файл pyproject.toml
-> poetry add requests  # Добавляет requests в dependencies
-> poetry add --dev pytest  # Добавляет pytest в dev-dependencies
-> poetry install --no-root
-> pytest .
+mkdir my_project
+cd my_project
+python -m venv .venv
+source .venv/bin/activate  # На Windows: .venv\Scripts\activate
+pip install poetry
+poetry init  # Создаст файл pyproject.toml
+poetry add requests  # Добавляет requests в dependencies
+poetry add --dev pytest  # Добавляет pytest в dev-dependencies
+poetry install --no-root
+pytest .
