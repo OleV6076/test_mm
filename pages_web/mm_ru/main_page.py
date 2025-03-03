@@ -90,6 +90,7 @@ class MainPage():
     def get_product_names(self):
         #Получение текста названия продукции на главной странице
 
+
         #Ожидание появления хотя бы одного элемента с указанным локатором
         self.page.wait_for_selector('//*[@class="subtitle-item"][@data-test-id="text__product-name"]')
 
