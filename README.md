@@ -53,7 +53,7 @@ docker build -t playwright-tests .
 ```
 ![Собираем билд в докере](https://github.com/user-attachments/assets/1b203c28-d0cd-4936-847a-0ec13d23b37e)
 
-### Запускаем контейнер с тестами дублирая Allure отчет в локальную папку из контейнера
+### Запускаем контейнер с тестами дублируя Allure отчет в локальную папку из контейнера
 ```
  docker run --rm -v C:\Users\user\PycharmProjects\mm\allure-report\:\allure-results playwright-tests
 ```
