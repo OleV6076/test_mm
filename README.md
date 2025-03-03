@@ -65,7 +65,9 @@ docker build -t playwright-tests .
 ![Allure общий](https://github.com/user-attachments/assets/e7aeacd8-696a-423e-8411-b1df8f8ab51c)
 
 #### Список тест кейсов в Allure 
-![Allure кейсыpng](https://github.com/user-attachments/assets/30fa5693-4206-42e3-9e9d-4510fc5a5e0b)
+![Allure кейсыpng](https://github.com/user-attachments/assets/4f041b03-71ce-4ac2-9de5-abd02c9b9cff)
+
+----
 
 
 
