@@ -32,6 +32,7 @@
  
 ### Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
+```
 mkdir my_project
 cd my_project
 python -m venv .venv
@@ -42,3 +43,4 @@ poetry add requests  # Добавляет requests в dependencies
 poetry add --dev pytest  # Добавляет pytest в dev-dependencies
 poetry install --no-root
 pytest .
+```
