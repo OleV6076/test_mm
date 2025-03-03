@@ -3,7 +3,7 @@
 
 ----
 ### Проект реализован с использованием:
-<img src="design/icons/python.png" width="50"><img src="design/icons/pysharm.png" width="50"><img src="design/icons/pytest.png" width="50"> <img src="design/icons/intellij_pycharm.png"> <img src="design/icons/allure_report.png" width="50">  <img src="design/icons/tg.png" width="50"> <img src="design/icons/Github.png" width="50"><img src="design/icons/request.png" width="50">
+<img src="design/icons/python.png" width="50">  <img src="design/icons/pysharm.png" width="50">  <img src="design/icons/pytest.png" width="50">  <img src="design/icons/playwright.png" width="50"><img src="design/icons/request.png" width="50">  <img src="design/icons/allure_report.png" width="50">  <img src="design/icons/Github.png" width="50">  <img src="design/icons/tg.png" width="50">  <img src="design/icons/docker.png" width="50"> 
 
 ----
 
