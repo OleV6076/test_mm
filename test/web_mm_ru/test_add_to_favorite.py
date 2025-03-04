@@ -25,7 +25,7 @@ def test_add_to_favorite(page):
     with allure.step("Переход в избранное"):
         main_page.navigate(FAVORITES_URL)
 
-    with allure.step("Проверка presence товара в избранном"):
+    with allure.step("Проверка добавления товара в избранном"):
         expect(page.locator("[data-test-id=\"text__product-name\"]"),
                "Товар не добавлен в избранное").to_contain_text(f"{random_product}")
 

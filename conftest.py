@@ -11,8 +11,12 @@ def browser():
 
 @pytest.fixture
 def page(browser):
-    page = browser.new_page()
-    page.set_viewport_size({"width": 1920, "height": 1080})
+    context = browser.new_context(
+        record_video_dir="videos/",
+        record_video_size={"width": 1920, "height": 1080},
+        viewport={"width": 1920, "height": 1080}
+    )
+    page = context.new_page()
 
     yield page
-    page.close()
+    context.close()

@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Копируем зависимости
 COPY requirements.txt .
-
+# Создаем папку для отчетов
 RUN mkdir allure-results
 
 # Устанавливаем зависимости
@@ -22,4 +22,4 @@ COPY . .
 CMD ["pytest","--alluredir=allure-results"]
 
 #Команда для запуска докера и копирования отчета в локальную папку
-#docker run --rm -v C:\Users\user\PycharmProjects\mm\allure-report\:/app/allure-results playwright-tests
+#docker run --rm -v C:\Users\user\PycharmProjects\mm\allure-results\:/app/allure-results playwright-tests
