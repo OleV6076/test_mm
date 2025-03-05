@@ -3,7 +3,7 @@
 
 ----
 ### Проект реализован с использованием:
-<img src="design/icons/python.png" width="50">  <img src="design/icons/pysharm.png" width="50">  <img src="design/icons/pytest.png" width="50">  <img src="design/icons/playwright.png" width="50"><img src="design/icons/request.png" width="50">  <img src="design/icons/allure_report.png" width="50">  <img src="design/icons/Github.png" width="50">  <img src="design/icons/tg.png" width="50">  <img src="design/icons/docker.png" width="50"> 
+<img src="design/icons/python.png" width="50">  <img src="design/icons/pysharm.png" width="50">  <img src="design/icons/pytest.png" width="50">  <img src="design/icons/playwright.png" width="50"><img src="design/icons/request.png" width="50">  <img src="design/icons/allure_report.png" width="50">  <img src="design/icons/Github.png" width="50">  <img src="design/icons/tg.png" width="50">  <img src="design/icons/docker.png" width="50"> <img src="design/icons/jenkins.png" width="50">
 
 ----
 
@@ -33,16 +33,12 @@
 ### Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
 ```
-mkdir my_project
-cd my_project
-python -m venv .venv
-source .venv/bin/activate  # На Windows: .venv\Scripts\activate
-pip install poetry
-poetry init  # Создаст файл pyproject.toml
-poetry add requests  # Добавляет requests в dependencies
-poetry add --dev pytest  # Добавляет pytest в dev-dependencies
-poetry install --no-root
-pytest .
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+playwright install
+pytest --alluredir=allure-results test/
+allure serve allure-results
 ```
 
 ---
@@ -66,6 +62,14 @@ docker build -t playwright-tests .
 
 #### Список тест кейсов в Allure 
 ![Allure кейсыpng](https://github.com/user-attachments/assets/4f041b03-71ce-4ac2-9de5-abd02c9b9cff)
+
+----
+
+#### Запуск тестов в Jenkins
+>Локально развернул Jenkins в Docker с реализацией Allure отчета внутри
+
+![Jenkins+Allure](https://github.com/user-attachments/assets/b8403c85-411e-4c58-b974-dcdab6881659)
+![Jenkins+Allure 2](https://github.com/user-attachments/assets/f7337213-ff3f-472f-8586-30001dff8042)
 
 ----
 
