@@ -77,7 +77,8 @@ docker build -t playwright-tests .
 > Добавлена пауза между шагами 2с для наглядности. Тест проходит по сценарию:
 > Выбор рандомного товара-Переход в карточку товара-Добавление товара в Корзину-Проверка товара в корзине-Удаление товара из корзины
 
-[615e7d4f8ec1caafcc754ed8c3f6a440.webm](https://github.com/user-attachments/assets/a8dfbea1-7dfd-491e-9cea-64ce3c046b57)
+![686934ed8c1a2ffd689469835e26f016](https://github.com/user-attachments/assets/10d18953-bb79-42f6-8a0a-799fc1f5c342)
+
 
 
 
