@@ -65,9 +65,9 @@ docker build -t playwright-tests .
 
 ----
 
-#### Список тест кейсов в Allure 
+#### Запуск тестов в Jenkins
 >Локально развернул Jenkins в Docker с реализацией Allure отчета внутри
-![Allure общий](https://github.com/user-attachments/assets/98f196b8-861f-40cd-9a6b-14080e33a4b6)
+![Jenkins+Allure](https://github.com/user-attachments/assets/b8403c85-411e-4c58-b974-dcdab6881659)
 ![Jenkins+Allure 2](https://github.com/user-attachments/assets/f7337213-ff3f-472f-8586-30001dff8042)
 
 ----
