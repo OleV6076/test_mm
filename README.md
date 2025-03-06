@@ -37,7 +37,7 @@
 - [x] Запрос на удаление пользователя
   
 ----
- 
+
 ### Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
 ```
@@ -80,6 +80,11 @@ docker build -t playwright-tests .
 ![Jenkins+Allure 2](https://github.com/user-attachments/assets/f7337213-ff3f-472f-8586-30001dff8042)
 
 ----
+
+>Реализована отправка результатов тестового прогона в Telegram
+>Пример отчета
+
+![image](https://github.com/user-attachments/assets/0552f06e-6fe7-4855-813d-ff0384a7e9f8)
 
 
 
